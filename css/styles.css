@@ -858,7 +858,7 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .form-field
- {
+ { position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -874,16 +874,37 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .form-input {
+ 
   margin: 0;
-  padding: 11px 12px;
+  padding: 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.input-icon {
+  position: absolute;
+top: 50%;
+left: 15px;
+
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+
+}
+
+.form-input:focus ~ .input-icon {
+  fill:var(--accent-color)
 }
 
 textarea {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
 }
 
 .comment::placeholder {
@@ -891,7 +912,7 @@ textarea {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0,5);
-  padding: 12px 16px;
+  /* padding: 12px 16px; */
 }
 
 .policy-label {
