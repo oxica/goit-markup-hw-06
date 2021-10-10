@@ -892,8 +892,15 @@ left: 15px;
 
 }
 
+.form-input:hover ~ .input-icon,
 .form-input:focus ~ .input-icon {
   fill:var(--accent-color)
+}
+
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--accent-color);
+ 
 }
 
 textarea {
@@ -928,7 +935,7 @@ textarea {
 .form-btn {
   display: inline-block;
   border: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 10px 56px;
   border-radius: 4px;
   background-color: var(--accent-color);
