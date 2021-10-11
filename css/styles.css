@@ -527,7 +527,7 @@ ul {
 }
 
 .footer-social-flex {
-  margin-left: 70px;
+  margin-left: 80px;
   width: 206px;
 }
 
@@ -592,7 +592,7 @@ ul {
 }
 
 .footer-submit {
-  width: 570px;
+  /* width: 570px; */
   margin-left: 93px;
 }
 
@@ -612,35 +612,43 @@ ul {
   margin: 0;
   padding: 13px 16px;
   border-radius: 4px;
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--hero-background-color);
-  
+  color: var(--white-text-color);
 }
 
 .footer-submit-input::placeholder {
   font-size: 16px;
-line-height: 1.25;
+  line-height: 1.25;
 
-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-submit-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   border: none;
   margin: 0;
   padding: 8px 29px;
   border-radius: 4px;
+
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--white-text-color);
-  font: inherit;
+  
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
   cursor: pointer;
-  /* min-width: 200px; */
   min-height: 43px;
   margin-left: 12px;
-
 }
 
 .footer-submit-btn::after {
@@ -650,7 +658,6 @@ color: rgba(255, 255, 255, 0.6);
   height: 20px;
   margin-left: 10px;
   background-image: url(../images/send.svg);
-  
 }
 
 
@@ -711,8 +718,6 @@ color: rgba(255, 255, 255, 0.6);
 
   color: var(--white-text-color);
 }
-
-
 
 .portfolio-btn {
   display: inline-block;
@@ -828,10 +833,6 @@ color: rgba(255, 255, 255, 0.6);
 
 }
 
-.modal-icon:hover {
-fill: var(--accent-color)
-} 
-
 .close-btn {
   position: absolute;
 
@@ -846,6 +847,12 @@ fill: var(--accent-color)
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+}
+
+.close-btn:hover .modal-icon {
+  fill: var(--accent-color)
 }
 
 .form {
@@ -903,6 +910,7 @@ fill: var(--accent-color)
   position: absolute;
   top: 50%;
   left: 15px;
+  transform: translateY(25%);
 
   display: inline-block;
   width: 12px;
@@ -924,6 +932,7 @@ textarea {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  height: 120px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -942,7 +951,7 @@ textarea:focus {
 }
 
 .form-field-chek {
-  
+  padding-left: 14px;
   margin-top: 25px;
   margin-bottom: 30px;
 }
@@ -987,6 +996,7 @@ textarea:focus {
 }
 
 .policy-link {
+  margin-left: 4px;
   color:   rgba(33, 150, 243, 1);
 }
 
@@ -1002,7 +1012,12 @@ textarea:focus {
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  font: inherit;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
   cursor: pointer;
 
   background-color: var(--accent-color);
