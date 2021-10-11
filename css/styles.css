@@ -866,8 +866,8 @@ fill: var(--accent-color)
   margin-top: 12px;
 }
 
-.form-field
- { position: relative;
+.form-field{ 
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -941,7 +941,46 @@ textarea:focus {
   color: rgba(117, 117, 117, 0,5);
 }
 
+.form-field-chek {
+  
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.icon-chek {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 7px;
+ }
+
+.form-checkbox {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.form-checkbox:checked + .icon-chek {
+  background-image: url(../images/icon-check.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--accent-color);
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+
 .policy-label {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-text-color);
