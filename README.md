@@ -1,5 +1,7 @@
 # goit-markup-hw-06
 
+# my homework-06
+
 # Домашнее задание
 
 - Создай репозиторий `goit-markup-hw-06`.
